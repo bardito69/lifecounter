@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="life-counter">
-    <button id="minusBtn">-</button>
-    <span id="lifeTotal">20</span>
-    <button id="plusBtn">+</button>
-</div>
+
     <div class="container">
         <h1>MTG Life Tracker</h1>
+
+        <!-- Player 1 -->
         <div class="player">
             <h2>Player 1: <span id="player1-lifetotal">20</span></h2>
             <button onclick="changeLife('player1', 1)">+1</button>
             <button onclick="changeLife('player1', -1)">-1</button>
         </div>
+
+        <!-- Player 2 -->
         <div class="player">
             <h2>Player 2: <span id="player2-lifetotal">20</span></h2>
             <button onclick="changeLife('player2', 1)">+1</button>
             <button onclick="changeLife('player2', -1)">-1</button>
         </div>
+
+        <!-- Reset -->
         <div class="reset">
             <button onclick="resetLife()">Reset</button>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

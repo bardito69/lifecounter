@@ -1,15 +1,29 @@
-let lifeTotals = {
-    player1: 20,
-    player2: 20
-};
+// Default lifetotals
+let player1Life = 20;
+let player2Life = 20;
 
-function changeLife(player, delta) {
-    lifeTotals[player] += delta;
-    document.getElementById(`${player}-lifetotal`).textContent = lifeTotals[player];
+// Updates display on screen
+function updateDisplay() {
+    document.getElementById("player1-lifetotal").textContent = player1Life;
+    document.getElementById("player2-lifetotal").textContent = player2Life;
 }
 
+// Change life for a player
+function changeLife(player, amount) {
+    if (player === "player1") {
+        player1Life += amount;
+    } else if (player === "player2") {
+        player2Life += amount;
+    }
+    updateDisplay();
+}
+
+// Reset both players to 20
 function resetLife() {
-    lifeTotals = { player1: 20, player2: 20 };
-    document.getElementById('player1-lifetotal').textContent = lifeTotals.player1;
-    document.getElementById('player2-lifetotal').textContent = lifeTotals.player2;
+    player1Life = 20;
+    player2Life = 20;
+    updateDisplay();
 }
+
+// Initialize display on page load
+updateDisplay();

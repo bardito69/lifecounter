@@ -1,58 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f3f3f3;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .container {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    max-width: 400px;
+    margin: auto;
 }
 
 .player {
-    margin-bottom: 20px;
+    background: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 18px;
+    font-size: 1.5rem;
     padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
-    margin: 5px;
+    background-color: #555;
+    color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-button:active {
-    background-color: #387039;
+    background-color: #777;
 }
 
 .reset button {
-    background-color: #f44336;
-}
-
-.reset button:hover {
-    background-color: #e53935;
+    background-color: #aa0000;
 }
